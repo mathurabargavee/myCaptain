@@ -1,0 +1,11 @@
+def frequency(string):
+    dic={}
+    for char in string:
+        dic.setdefault(char,0)
+        dic[char]+=1
+    dic={k: v for k, v in sorted(dic.items(), key=lambda item: item[1])}
+    for k, v in reversed(dic.items()):
+        print(k,"=", v,end=' ')
+
+string=input("Please enter a string")
+frequency(string)

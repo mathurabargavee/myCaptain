@@ -4,10 +4,7 @@ def write_csv(info_list):
     
       
     with open('stud_info.csv',mode='a') as csv_file:
-        
-        
-        
-              
+     
         writer=csv.writer(csv_file)
         
         if csv_file.tell()==0:

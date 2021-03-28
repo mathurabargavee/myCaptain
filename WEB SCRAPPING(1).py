@@ -27,7 +27,7 @@ connect.connect(args.dbname)
 for page_num in range(1,page_num_MAX):
     url=oyo_url + str(page_num)
     print("GET Request for: " + url)
-    req=requests.get(url)
+    req=requests.get(url
     content=req.content
     
     soup=BeautifulSoup(content,"html.parser")
